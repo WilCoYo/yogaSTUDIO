@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-
+                                /* Body and Background Image Formatting  */
 
 body {
     height: 100vh;
@@ -27,6 +27,8 @@ body::before {
     z-index: -1;
 }
 
+
+                                            /* Header Formatting */
 
 a {
     color: #000;
@@ -54,10 +56,13 @@ header ul {
 
 header ul li {
     font-size: 1.25rem;
+    font-weight: 400;
     padding: 1rem 1.5rem 1rem 1rem;
     
 }
 
+
+                                    /* Grid Container Formatting and Templates*/
 
 .container {
     padding: 2rem;
@@ -74,22 +79,68 @@ header ul li {
 }
 
 
+                                            /* Universal Cell Formatting */
 
 
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.cell img {
-    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15rem;
+    overflow: hidden;
+    position: relative;
 }
 
-.cell img:hover {
-    opacity: .5;
+
+.cell > * {
+    position: relative;
+    z-index: 1;
 }
 
+                                        /* Excluding Cell 1 from Hover Effect */
+
+.cell:not(.cell1)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+    pointer-events: none;
+}
+
+.cell:not(.cell1):hover::before {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+
+
+                                                /* Class Titles */
+
+.cell h4 {
+    color: #000;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 2rem;
+    background-color: #ffffffc5;
+    padding: .25rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+
+
+                                            /* Cell 1 Formatting */
 
 .cell1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     height: 100%;
 
@@ -109,13 +160,78 @@ header ul li {
     height: 100%;
 }
 
+.cell1 h3 {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    font-family: "Lobster Two", sans-serif;;
+}
+
+.cell1 p {
+    font-family: "Roboto", sans-serif;
+}
 
 
 .mission-section {
     padding: 1rem;
+    margin-top: auto;
+    margin-bottom: 7rem;
 }
 
 .classes-section {
-    margin-top: auto;
+    margin-bottom: auto;
     padding: 1rem;
+}
+
+
+
+                                    /* Cell Background Images */
+
+.cell2 {
+    background-image: url('imgs/advanced-yoga.jpg');
+}
+
+.cell3 {
+    background-image: url('imgs/group-classes.jpg');
+}
+
+.cell4 {
+    background-image: url('imgs/at-home.jpg');
+}
+
+.cell5 {
+    background-image: url('imgs/meditation.jpg');
+}
+
+.cell6 {
+    background-image: url('imgs/one-on-one.jpg');
+}
+
+.cell7 {
+    background-image: url('imgs/outdoor-classes.jpg');
+}
+
+
+
+.material-symbols-outlined {
+    font-size: 1rem;
+}
+
+.material-symbols-outlined:hover {
+    font-size: 1rem;
+    
+}
+
+
+
+
+.social-icons {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    font-size: 2rem;
+}
+
+.social-icons:hover {
+    scale: 1.1;
 }
