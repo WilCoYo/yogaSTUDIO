@@ -79,11 +79,21 @@ header ul li {
     letter-spacing: .1rem;
 }
 
+.hero h1:hover {
+    -webkit-text-stroke: 1px black;
+    color: rgba(255, 255, 255, 0);
+    cursor:default;
+}
+
 .hero h2 {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
     margin-bottom: 5rem;
+}
+
+.hero h2:hover {
+    cursor:default;
 }
 
 button {
@@ -98,11 +108,17 @@ button {
 
 button:hover {
     cursor: pointer;
-    background-color: #ffffff49;
+    background-color: #ffffff63;
+    scale: 1.1;
 }
 
 .material-symbols-outlined {
     font-size: 1rem;
+}
+
+.material-symbols-outlined:hover {
+    font-size: 1rem;
+    
 }
 
 
@@ -113,6 +129,10 @@ button:hover {
     bottom: 1rem;
     right: 2rem;
     font-size: 2rem;
+}
+
+.social-icons:hover {
+    scale: 1.1;
 }
 
 
