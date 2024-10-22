@@ -73,11 +73,15 @@ header ul li {
     justify-content: center;
     align-items: center;
 
-    max-width: 100%;
+    width: 100%;
     grid-template-columns: 30rem 15rem 15rem;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1rem;
-   
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -141,27 +145,19 @@ header ul li {
                                             /* Cell 1 Formatting */
 
 .cell1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
-    height: 100%;
+  height: 100%;
 
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 4;
 
-    background: rgba(255, 255, 255, 0.644);
+    background: rgba(255, 255, 255, 0.75);
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.cell1 > div {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
+
 
 .cell1 h3 {
     text-align: center;
@@ -172,17 +168,16 @@ header ul li {
 
 .cell1 p {
     font-family: "Roboto", sans-serif;
+    line-height: 2rem;
 }
 
 
 .mission-section {
     padding: 1rem;
-    margin-top: auto;
-    margin-bottom: 7rem;
+    margin-bottom: 1rem;
 }
 
 .classes-section {
-    margin-bottom: auto;
     padding: 1rem;
 }
 

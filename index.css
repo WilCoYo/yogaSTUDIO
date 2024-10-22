@@ -89,11 +89,18 @@ header ul li {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 }
 
 .hero h2:hover {
     cursor:default;
+}
+
+.hero h4 {
+    margin-bottom: 5rem;
+    font-style: italic;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
 }
 
 button {
