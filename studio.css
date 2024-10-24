@@ -253,7 +253,15 @@ h2 {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         max-width: 100%;
-         margin: 5rem 0 0 0; 
+        margin: 10rem 0 0 0; 
+        padding: 0;
+        
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+       
+        gap: 4rem;
     }
 
     body {
@@ -275,16 +283,6 @@ h2 {
         margin-bottom: 4rem;
     }
 
-
-    
-    .container {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: translate(0);
-        padding: 0;
-        gap: 4rem;
-    }
 
     .social-icons {
         display: none;
