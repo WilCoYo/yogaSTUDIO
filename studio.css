@@ -253,7 +253,7 @@ h2 {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         max-width: 100%;
-        margin: 10rem 0 0 0; 
+        margin: 3rem 0 0 0; 
         padding: 0;
         
         position: relative;
@@ -278,8 +278,12 @@ h2 {
         
     }
 
+    .cell {
+        overflow: visible;
+    }
+
     .cell1 {
-        height: 100vh;
+        height: 100%;
         margin-bottom: 4rem;
     }
 
