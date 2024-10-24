@@ -253,6 +253,7 @@ h2 {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         max-width: 100%;
+         margin: 5rem 0 0 0; 
     }
 
     body {
